@@ -77,3 +77,8 @@ document.getElementById('tweet').addEventListener('click', e => {
     const encoded_text = encodeURI(output.value);
     window.open(`https://twitter.com/intent/tweet?text=${encoded_text}`);
 });
+
+document.getElementById('copy').addEventListener('click', e => {
+    output.select();
+    document.execCommand('Copy');
+});
