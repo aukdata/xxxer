@@ -74,6 +74,6 @@ document.getElementById('convert').addEventListener('click', e => {
 });
 
 document.getElementById('tweet').addEventListener('click', e => {
-    const encoded_text = encodeURIComponent(output.value);
+    const encoded_text = encodeURI(output.value);
     window.open(`https://twitter.com/intent/tweet?text=${encoded_text}`);
 });
