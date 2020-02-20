@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>xxxer</title>
 
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 <body>
-    <section>
-        <p>入力</p>
-        <textarea id='input'></textarea>
-
-        <button id='convert'>変換</button>
-        <button id='tweet'>ツイート</button>
-        <button id='copy'>コピー</button>
-
-        <p>出力</p>
-        <textarea readonly id='output'></textarea>
-    </section>
+    <main>
+        <section class='container'>
+            <div class='box'>
+                <p>入力</p>
+                <textarea id='input'></textarea>
+            </div>
+    
+            <div class='box'>
+                <p>出力</p>
+                <textarea readonly id='output'></textarea>
+            </div>
+        </section>
+    
+        <div class='box'>
+            <button id='convert'>変換</button>
+            <button id='tweet'>ツイート</button>
+            <button id='copy'>コピー</button>
+        </div>    
+    </main>
 </body>
 </html>
